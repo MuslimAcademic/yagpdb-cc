@@ -41,10 +41,10 @@
     {{/* Misc */}}
         {{$CCID := 5}} {{/* ID of your "Range CC" */}}
         {{$SchedueledCCID := 7}} {{/* ID of your "Schedueled CC" */}}
-        {{$masterTicketChannelID := 721766366776131663}} {{/* A channel ID where the status of ur tickets will be displayed (Further explained in the README) */}}
-        {{$Trc := 682036950999629879}} {{/* Channe ID to save transcripts */}}
-        {{$category := 682207474178195489}} {{/* Tickets category ID */}}
-        {{$Delay := 24}} {{/* Delay (in hours) for a ticket to automatically be deleted if no messages are sent */}}
+        {{$masterTicketChannelID := 813904587252695040}} {{/* A channel ID where the status of ur tickets will be displayed (Further explained in the README) */}}
+        {{$Trc := 813371421153296413}} {{/* Channe ID to save transcripts */}}
+        {{$category := 813371420070379521}} {{/* Tickets category ID */}}
+        {{$Delay := 48}} {{/* Delay (in hours) for a ticket to automatically be deleted if no messages are sent */}}
 
 {{/* END OF USER VARIABLES */}}
 
@@ -180,6 +180,6 @@ All good! If you did everything right, you should now be good to use your Reacti
 **TicketSolvingChannelStatus:** {{$setup.ticketSolving}}
 **TicketCloseChannelStatus:** {{$setup.ticketClose}}
 **Delay (in hours):** {{toInt $setup.Delay}}
-{{deleteResponse 120}}
+{{deleteResponse 1}}
 {{end}}
 {{deleteTrigger 7}}
