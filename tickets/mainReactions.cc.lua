@@ -22,7 +22,7 @@
 {{$TO := $setup.ticketOpen}}{{$TS := $setup.ticketSolving}}{{$TC := $setup.ticketClose}}
 
 {{/* OPENING TICKET */}}
-{{if and .ReactionAdded (eq $RID $msgID) (eq .Reaction.Emoji.Name $oe)}} {{$s := exec "ticket open" "ticket"}} {{deleteMessageReaction nil $msgID .User.ID $oe}} {{end}}
+{{if and .ReactionAdded (eq $RID $msgID) (eq .Reaction.Emoji.Name $oe)}} {{$s := exec "ticket open" "ticket"}} {{deleteMessageReaction nil $msgID .User.ID $oe}} {{giveRoleID .User.ID 814079738385137665}} {{end}}
 
 {{if eq .Channel.ParentID $category}}
 {{$tn := reFind `\d+` .Channel.Name}}
