@@ -14,7 +14,7 @@
 {{/* USER VARIABLES */}}
 
     {{/* Satff Roles */}}
-        {{$Admins := cslice 813371420057927709 813371420057927708}} {{/* IDs of your ADMINs Roles. Leave the "cslice" here even if you have only 1 role */}}
+        {{$Admins := cslice 813371420057927709}} {{/* IDs of your ADMINs Roles. Leave the "cslice" here even if you have only 1 role */}}
         {{$Mods := cslice 813371420057927707 813371420057927706}} {{/* IDs of your MODs Roles. Leave the "cslice" here even if you have only 1 role */}}
         {{$MentionRoleID := 813371420057927707}} {{/* Role to be mentioned when a new ticket is opened */}}
 
