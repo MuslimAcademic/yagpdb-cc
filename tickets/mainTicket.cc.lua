@@ -26,10 +26,8 @@
 {{$TS := $setup.ticketClose}}
 {{$TC := $setup.ticketSolving}}
 {{$time :=  currentTime}}
-{{$content := print "Welcome, " .User.Mention " to the Muslim Study Group!!\nTo know more about what “Study with me” groups are, please read  <#813371420318629901>.\nTo get full access to the server, we require you to go through an approval process.\n-"}}
-{{$descr := print "A Moderator will talk to you soon!\n\nFor now, please read the Rules in <#813371420318629902> and answer the following questions:\n\n1) What is your faith/religion? (We allow non-Muslims)\n2) What is your gender? (Please specify your biological, birth gender)\n3) Do you agree to the rules? (read <#813371420318629902>)\n\nPlease type '@Moderator - Male' if you are male or '@Moderator - Female'  if you are female to ping a moderator who will be voice chatting with you for verification purposes.\n\nIf a mod doesn't respond, please wait patiently.\n(This chat may be saved for our records.)"}}
-{{$embed := cembed "color" 8190976 "description" $descr "timestamp" $time}}
-{{$id := sendMessageNoEscapeRetID nil (complexMessage "content" $content "embed" $embed)}}
+{{$content := print "Welcome, " .User.Mention " to the Muslim Study Group!!\nTo know more about what “Study with me” groups are, please read  <#813371420318629901>.\nTo get full access to the server, we require you to go through an approval process.\n-\nA Moderator will talk to you soon!\n\nFor now, please read the Rules in <#813371420318629902> and answer the following questions:\n\n1) What is your faith/religion? (We allow non-Muslims)\n2) What is your gender? (Please specify your biological, birth gender)\n3) Do you agree to the rules? (read <#813371420318629902>)\n\nPlease type '@Moderator - Male' if you are male or '@Moderator - Female'  if you are female to ping a moderator who will be voice chatting with you for verification purposes.\n\nIf a mod doesn't respond, please wait patiently.\n(This chat may be saved for our records.)"}}
+{{$id := sendMessageNoEscapeRetID nil (complexMessage "content" $content)}}
 {{$realDelay := mult $Delay 3600}}
 {{$AoD := 1}}
 {{if gt $Delay 3}} {{$AoD = 2}} {{end}}
