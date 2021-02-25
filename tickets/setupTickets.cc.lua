@@ -41,7 +41,7 @@
     {{/* Misc */}}
         {{$CCID := 5}} {{/* ID of your "Range CC" */}}
         {{$SchedueledCCID := 7}} {{/* ID of your "Schedueled CC" */}}
-        {{$masterTicketChannelID := 813904587252695040}} {{/* A channel ID where the status of ur tickets will be displayed (Further explained in the README) */}}
+        {{$masterTicketChannelID := 814392062157389836}} {{/* A channel ID where the status of ur tickets will be displayed (Further explained in the README) */}}
         {{$Trc := 813371421153296413}} {{/* Channe ID to save transcripts */}}
         {{$category := 813371420070379521}} {{/* Tickets category ID */}}
         {{$Delay := 48}} {{/* Delay (in hours) for a ticket to automatically be deleted if no messages are sent */}}
